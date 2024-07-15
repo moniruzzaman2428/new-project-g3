@@ -100,6 +100,44 @@
   #quick{
     font-weight: 500;
   }
+  .fact-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .fact-card{
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .fact-number{
+    font-size: 2.8rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .fact-discribtion{
+    max-width: 540px;
+  }
+  .sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .sponsor-companis{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .sponsor-companis img{
+    filter: grayscale(100%);
+  }
   /* responsive media quarry */
   @media screen and (max-width: 576px) {
     .navber, 
@@ -107,11 +145,21 @@
     .team{
         flex-direction:column;
     }
-    .team-img-container{
+    .team-img-container,
+    .fact-container,
+    .sponsor-companis{
       grid-template-columns: repeat(1, 1fr);
+    }
+    .sponsor-companis{
+      justify-items: center;
+      gap: 50px ;
     }
     .our-feature{
       margin-left: 20px;
+    }
+    .fact-container{
+      justify-items: center;
+      gap: 24px ;
     }
   }
   /* madeum devis  */
@@ -122,5 +170,9 @@
     .our-feature{
       margin-left: 50px;
     }
-    
+    .sponsor-companis, .fact-container{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px ;
+      justify-items: center;
+    }
   }
