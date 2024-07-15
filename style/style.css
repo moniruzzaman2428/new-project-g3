@@ -116,7 +116,9 @@
   }
   .feature-card .feature-title{
     font-weight: 600px;
-    font-size: 1.25rem;    
+    font-size: 1.25rem; 
+    margin-top: 0px;
+    margin-bottom: 0px;   
   }
   #exparience-bagd{
     padding: 45px  42px;
